@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.nit")
 public class AppConfig {
 	
+	public AppConfig() {
+		System.out.println("AppConfig:;0-param constuctor ");
+	}
 	@Bean("sysDate")
 	public LocalDateTime createLDT() {
 		return LocalDateTime.now(); // static factory methof of that class gives date and time
