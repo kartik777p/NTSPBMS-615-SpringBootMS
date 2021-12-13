@@ -1,0 +1,29 @@
+#Person Info Deteils
+person:
+  info:
+  #Array Type Properties
+    favColor: Red,Green,Blue,Pink
+    #Map Type Properties
+    idDetails:
+      AdharCard: 224760296701
+      PanCard: FIBS2345PS
+      #HAS-A Type Properties
+    jobDetails:
+      CompanyName: NeoSoft
+      deptNo: 2021
+      desc: Devloper
+      #Simple Type Properties
+    pId: 101
+    pName: kartik
+    #Set type Properties
+    phoneNumber:
+    - 8007275703
+    - 8605121026
+    - 8805822349
+    - 9730996264
+    #List Type Properties
+    studies:
+    - 10th
+    - 12th
+    - BCA
+    - MCA
