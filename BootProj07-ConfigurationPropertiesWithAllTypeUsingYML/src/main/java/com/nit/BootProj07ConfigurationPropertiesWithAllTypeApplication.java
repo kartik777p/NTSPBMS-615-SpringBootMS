@@ -8,11 +8,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.nit.beans.PersonInfo;
 
 @SpringBootApplication
-public class BootProj06ConfigurationPropertiesWithAllTypeApplication {
+public class BootProj07ConfigurationPropertiesWithAllTypeApplication {
 
 	public static void main(String[] args) {
 		//get Ioc container obj ref
-	ApplicationContext ctx=	   SpringApplication.run(BootProj06ConfigurationPropertiesWithAllTypeApplication.class, args);
+	ApplicationContext ctx=	   SpringApplication.run(BootProj07ConfigurationPropertiesWithAllTypeApplication.class, args);
 	 //get spring bean class obj
 	  PersonInfo perInfo=ctx.getBean("pInfo",PersonInfo.class);
 	  //print its data
