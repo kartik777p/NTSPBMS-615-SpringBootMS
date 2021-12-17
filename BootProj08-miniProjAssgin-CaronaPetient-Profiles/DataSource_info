@@ -1,0 +1,15 @@
+#Devlopment env
+datasource ->apache dbcp
+database     ->mysql
+
+#Test env
+datasource ->tomcat cp
+database     ->mysql
+
+#UAT env
+datasource ->C3P0
+database     ->oracle
+
+#PRODUCTION env
+datasource ->Hikari
+database     ->Oracle
