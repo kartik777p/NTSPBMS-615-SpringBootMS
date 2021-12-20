@@ -28,6 +28,7 @@ public class MySQLPetientDAOImpl implements PetientDAO {
 	
 	@Override
 	public List<CaronaPetient> getPetients(String city1, String city2, String city3) throws Exception {
+		System.out.println("DataSource Name :- "+ds.getClass());
 		List<CaronaPetient> list = null;
 		try (Connection con = ds.getConnection(); PreparedStatement ps = con.prepareStatement(GET_PETIENTS_RECORDS)) {
 			// set values to query param

@@ -32,7 +32,13 @@ public class BootProj03MiniProjectLayeredAppApplication {
 	}
 
 	public static void main(String[] args) {
+		//spring boot Way
+		//SpringApplication application=new SpringApplication(BootProj03MiniProjectLayeredAppApplication.class);
+		//add profile 
+		//application.setAdditionalProfiles("uat");
+		/* -------------------------------------------------------------------------*/
 		//get IOC container
+		//ApplicationContext ctx=application.run(args);
 		ApplicationContext ctx=SpringApplication.run(BootProj03MiniProjectLayeredAppApplication.class, args);
 		//get Controller class object
 		 PayrollSystemController controller=ctx.getBean("controller",PayrollSystemController.class);
