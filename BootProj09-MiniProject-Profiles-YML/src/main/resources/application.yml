@@ -1,0 +1,5 @@
+ # Active profile
+ spring:
+  profiles:
+    active:
+     prod
