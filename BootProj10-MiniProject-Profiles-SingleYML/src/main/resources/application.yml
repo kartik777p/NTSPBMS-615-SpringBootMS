@@ -1,0 +1,48 @@
+ # Active profile
+ spring:
+  profiles:
+    active:
+     uat
+
+---
+spring:
+  profiles: dev
+  datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: root
+        url: jdbc:mysql:///ntspms615
+        username: root
+        #Break Algo to get Our choise ds as autoCfgs
+        type: org.apache.commons.dbcp2.BasicDataSource
+ 
+---
+spring:
+  profiles: test
+  datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: root
+        url: jdbc:mysql:///ntspms615
+        username: root
+        #to break algo
+        type: org.apache.tomcat.jdbc.pool.DataSource
+     
+---
+spring:
+   profiles: uat
+   datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        password: SYSTEM
+        url: jdbc:oracle:thin:@localhost:1521:xe
+        username: SYSTEM
+        #No need of ds type any how @bean method will dominate 
+
+---
+spring:
+  profiles: prod
+  datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        password: SYSTEM
+        url: jdbc:oracle:thin:@localhost:1521:xe
+        username: SYSTEM
+        #At the time of Prod no UAT is Activated so by defult hikari  ds will come as autocfgs
+        
