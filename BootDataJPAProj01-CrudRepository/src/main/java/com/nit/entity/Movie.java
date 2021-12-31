@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 @Data
 @Entity
 @Table(name = "SP_DATA_MOVIE")
-@RequiredArgsConstructor  //whic we want that only come
+@RequiredArgsConstructor  //which we want that only come
 @NoArgsConstructor
 public class Movie implements Serializable {
 	//use Wrapper type here bcz they hold null as defult value

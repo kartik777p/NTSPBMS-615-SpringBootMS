@@ -50,7 +50,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			e.printStackTrace();
 		}    */
 		
-		/*  System.out.println("-----------------For FindAll() method --------------------");
+		 System.out.println("-----------------For FindAll() method --------------------");
 		try {
 			Iterable<Movie> list=service.fetchAllMovies();
 			System.out.println("Option:- 1...........using Inhanced for loop/forEach loop.............");
@@ -74,7 +74,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			Arrays.asList(list).stream().forEach(System.out::println);  
 		}catch (Exception e) {
 			e.printStackTrace();
-		}    	*/
+		}    	
 	 /*	System.out.println("-----------------For FindAllByIds() method --------------------");
 	   try {
 		   //create empty list
@@ -194,7 +194,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			e.printStackTrace();
 		}   */
 		
-		System.out.println("---------deleteAllByIds() method------------ ");
+	/*	System.out.println("---------deleteAllByIds() method------------ ");
 		try {
 			String msg=service.removeAllMoviesById(List.of(46));   
 			System.out.println(msg);
@@ -204,6 +204,6 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}   
+		}     */
 	}// run      
 }// class
