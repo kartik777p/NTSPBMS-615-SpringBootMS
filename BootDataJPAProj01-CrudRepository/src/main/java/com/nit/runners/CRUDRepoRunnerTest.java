@@ -22,7 +22,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		//System.out.println("----------------------------Save The Record --------------------------------------");
-	/*	//create movie obj to save data
+		//create movie obj to save data
 		Movie movie=new Movie();
 		//set values to movie obj
 		movie.setMName("Pushpa");
@@ -34,7 +34,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		*/
+		
 		
 	/*	System.out.println("--------------------------Count Movies ------------------------------------------------");
 		try {
@@ -50,7 +50,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			e.printStackTrace();
 		}    */
 		
-		 System.out.println("-----------------For FindAll() method --------------------");
+	/*	 System.out.println("-----------------For FindAll() method --------------------");
 		try {
 			Iterable<Movie> list=service.fetchAllMovies();
 			System.out.println("Option:- 1...........using Inhanced for loop/forEach loop.............");
@@ -74,7 +74,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			Arrays.asList(list).stream().forEach(System.out::println);  
 		}catch (Exception e) {
 			e.printStackTrace();
-		}    	
+		}    	    */
 	 /*	System.out.println("-----------------For FindAllByIds() method --------------------");
 	   try {
 		   //create empty list
