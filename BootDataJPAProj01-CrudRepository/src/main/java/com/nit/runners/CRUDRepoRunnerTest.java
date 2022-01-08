@@ -75,7 +75,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}    	    */
-	 /*	System.out.println("-----------------For FindAllByIds() method --------------------");
+	 	System.out.println("-----------------For FindAllByIds() method --------------------");
 	   try {
 		   //create empty list
 			List<Integer> list = new ArrayList<>();
@@ -108,7 +108,7 @@ public class CRUDRepoRunnerTest implements CommandLineRunner {
 			Arrays.asList(movies).forEach(System.out::println);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}     */
+		}     
 	   /*     System.out.println("---------FindById(-) ");
 		try {
 			System.out.println("Movie details is :- "+service.fetchMovieById(2));
