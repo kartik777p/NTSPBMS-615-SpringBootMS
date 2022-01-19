@@ -21,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor  //which we want that only come
 @NoArgsConstructor
 public class Movie implements Serializable {
-	//use Wrapper type here bcz they hold null as defult value
+	//use Wrapper type here bcz they hold null as defult value 
 	@Id
 	@Column(name = "MID")   //no need of writing length here it is there for non numeric
 	@GeneratedValue(strategy = GenerationType.AUTO)
