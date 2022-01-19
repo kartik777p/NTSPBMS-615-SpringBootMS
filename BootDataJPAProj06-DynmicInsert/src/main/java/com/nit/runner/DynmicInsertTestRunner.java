@@ -16,7 +16,7 @@ public class DynmicInsertTestRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("==============Ways to store Partial Data Into DataBase==================");
-		/*	System.out.println("Problem 1:- Here if you want to store only 2 details of the entity class...but it will genrate sql query having all the details/columns");
+		/*	System.out.println("1:- Here if you want to store only 2 details of the entity class...but it will genrate sql query having all the details/columns");
 		//Version 1  -- default values null will be taken 
 		//create movie obj having some details
 		Movie m=new Movie();
@@ -26,7 +26,7 @@ public class DynmicInsertTestRunner implements CommandLineRunner {
 		m.setYear("2016");
 		//save movie obj to db
 		System.out.println(repo.save(m).getMid()+" id based Object is Stored..");   */
-	/*	System.out.println("Solution 1 :- Here if you want to store only 2 details of the entity class...then here query will genrate using that 2 details only.");
+	/*	System.out.println(" 2 :- Here if you want to store only 2 details of the entity class...then here query will genrate using that 2 details only.");
 		//Version 2  - @Transient on the top of the entity property
 				//create movie obj having all details,but pass null values in some of the details
 				Movie m=new Movie();
@@ -36,7 +36,7 @@ public class DynmicInsertTestRunner implements CommandLineRunner {
 				//save movie obj to db
 				System.out.println(repo.save(m).getMid()+" id based Object is Stored..");   */
 		
-		System.out.println("Solution 2 :- Here if you want to store only 2 details of the entity class...then here query will genrate using that 2 details only.");
+		System.out.println(" 3 :- Here if you want to store only 2 details of the entity class...then here query will genrate using that 2 details only.");
 		//Version 3  - @DynmicInsert on the top of the entity class
 				//create movie obj having all details,but pass null values in some of the details
 				Movie m=new Movie();
