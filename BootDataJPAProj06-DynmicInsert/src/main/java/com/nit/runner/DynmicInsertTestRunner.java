@@ -15,7 +15,7 @@ public class DynmicInsertTestRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("==============Ways to store Partial Data Into DataBase==================");
+		System.out.println("===============Ways to store Partial Data Into DataBase==================");
 		/*	System.out.println("1:- Here if you want to store only 2 details of the entity class...but it will genrate sql query having all the details/columns");
 		//Version 1  -- default values null will be taken 
 		//create movie obj having some details
