@@ -10,7 +10,7 @@ import com.nit.entity.Movie;
 import com.nit.repository.IMovieRepository;
 
 @Component
-public class QueryMethodTestRunner implements CommandLineRunner {
+public class QueryMethodForMultipleRowTestRunner implements CommandLineRunner {
 
 	@Autowired
 	private IMovieRepository repo;
