@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BootDataJpaProj06FinderMethodApplication {
+public class BootDataJpaProj07QueryMethodMultipleRowSelectionApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootDataJpaProj06FinderMethodApplication.class, args);
+		SpringApplication.run(BootDataJpaProj07QueryMethodMultipleRowSelectionApplication.class, args);
 	}
 
 }

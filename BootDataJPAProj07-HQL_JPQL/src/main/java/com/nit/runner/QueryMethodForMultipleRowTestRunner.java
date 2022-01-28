@@ -45,9 +45,9 @@ public class QueryMethodForMultipleRowTestRunner implements CommandLineRunner {
 		});    */
 		   
           /*------------------------------------------- Scalar @Query method for Selecting Specifics One colms values of DB table-----------------------------------------------------*/
-      /* System.out.println("------------------------------getMoviesByYearRange------------------");
+       System.out.println("------------------------------getMoviesByYearRange------------------");
       repo.getMoviesByYearRange("2021","2099").forEach(row->{
     	  System.out.println("Name:- "+row);
-      });   */
+      });   
 	}// run
 }// class
