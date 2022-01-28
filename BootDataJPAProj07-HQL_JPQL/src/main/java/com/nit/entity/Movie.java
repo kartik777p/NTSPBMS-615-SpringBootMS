@@ -16,7 +16,7 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @Data
-@Entity
+@Entity  
 @Table(name = "SP_DATA_MOVIE")
 @RequiredArgsConstructor  //which we want that only come
 @NoArgsConstructor
