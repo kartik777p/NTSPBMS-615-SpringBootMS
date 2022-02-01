@@ -17,8 +17,11 @@ public class QueryMethodForNativeSQLQueryTestRunner implements CommandLineRunner
 
 	@Override
 	public void run(String... args) throws Exception {
-	   System.out.println("=======INSRT QUERY===========");	
+	 /*  System.out.println("=======INSRT QUERY===========");	
 	   int count=repo.registerMovie("Sanak",4.1f, "2.9");
-	   System.out.println(count==0?"Movie not Registed ":"Movie is Registed");
+	   System.out.println(count==0?"Movie not Registed ":"Movie is Registed");  */
+		
+		System.out.println("==========SYSDATE in ORACLE========");
+		System.out.println(repo.fetchSysDate());
 	}// run
 }// class
