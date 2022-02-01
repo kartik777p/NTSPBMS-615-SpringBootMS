@@ -18,7 +18,7 @@ public interface IMovieRepository extends JpaRepository<Movie, Integer> {
 	   @Query(value = "SELECT SYSDATE FROM DUAL" , nativeQuery = true)
 	   public String fetchSysDate();
 	   
-	   @Query(value = "create table temp1(col1 number(5))", nativeQuery = true)
+	   @Query(value = "create table temp12(col1 number(5))", nativeQuery = true)
 	   @Modifying  //Compulsory since it is not select query.. if not wriitter will get negativeArrayIndex Size 1 exception
 	   public int createTableTemp();
 }
