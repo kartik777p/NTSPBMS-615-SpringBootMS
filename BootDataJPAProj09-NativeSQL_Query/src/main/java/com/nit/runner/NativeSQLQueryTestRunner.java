@@ -1,17 +1,14 @@
 package com.nit.runner;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.nit.entity.Movie;
 import com.nit.repository.IMovieRepository;
 
 @Component
-public class QueryMethodForNativeSQLQueryTestRunner implements CommandLineRunner {
-
+public class NativeSQLQueryTestRunner implements CommandLineRunner {
+	
 	@Autowired
 	private IMovieRepository repo;
 
@@ -24,4 +21,5 @@ public class QueryMethodForNativeSQLQueryTestRunner implements CommandLineRunner
 		System.out.println("==========SYSDATE in ORACLE========");
 		System.out.println(repo.fetchSysDate());
 	}// run
-}// class
+
+}
