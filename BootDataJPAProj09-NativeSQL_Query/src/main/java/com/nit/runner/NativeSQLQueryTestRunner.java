@@ -17,9 +17,13 @@ public class NativeSQLQueryTestRunner implements CommandLineRunner {
 	 /*  System.out.println("=======INSRT QUERY===========");	
 	   int count=repo.registerMovie("Sanak",4.1f, "2.9");
 	   System.out.println(count==0?"Movie not Registed ":"Movie is Registed");  */
-		
+		 
 		System.out.println("==========SYSDATE in ORACLE========");
 		System.out.println(repo.fetchSysDate());
+		System.out.println("-------------------------------------");
+		int count=repo.createTableTemp();
+		System.out.println(count<0?" Table not created ":"table is created ");
+		System.out.println();
 	}// run
 
 }
