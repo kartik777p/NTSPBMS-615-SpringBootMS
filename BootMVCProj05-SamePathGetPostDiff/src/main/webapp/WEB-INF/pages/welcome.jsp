@@ -10,3 +10,10 @@
 <form action="report" method="post">
 <input type="submit" value="get Report">
 </form>
+
+<br>
+<h2>Forwarding Request to another Handler method</h2>
+<h1><a href="forward">Forword Request</a></h1>
+<br>
+<h2>Redirecting Request to another Handler method</h2>
+<h1><a href="redirect">Redirect Request</a></h1>

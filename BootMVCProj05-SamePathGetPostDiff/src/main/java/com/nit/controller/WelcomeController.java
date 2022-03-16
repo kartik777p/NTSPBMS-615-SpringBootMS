@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.nit.service.IWishMsgService;
 
 @Controller
+//@RequestMapping("/wish-operation")
 public class WelcomeController {
  
 	
@@ -26,14 +27,30 @@ public class WelcomeController {
 	//@RequestMapping(value="/report",method = RequestMethod.GET)
 	@GetMapping("/report")
 	public String showReportForGet() {
+		System.out.println("WelcomeController.showReportForGet()");
 		return "show_report1";
 	}//showReportForGet
 	
 	//@RequestMapping(value="/report",method = RequestMethod.POST)
 	@PostMapping("/report")
 	public String showReportForPost() {
+		System.out.println("WelcomeController.showReportForPost()");
 		return "show_report2";
 	}//showReportForPost
 	
-		
+	@GetMapping("/forward")
+	public String showReportByForwoding() {
+		System.out.println("WelcomeController.showReportByForwoding()");
+		//return "forward:wish-operation/report";  //same class
+		//return "forward:report"; 
+		return "forward:test-operations/all";  // Forwarding req to another class hander method
+	}
+	
+	@GetMapping("/redirect")
+	public String showReportByRedirect() {
+		System.out.println("WelcomeController.showReportByRedirect()");
+		//return "redirect:wish-operation/report";  //same class
+		return "redirect:report"; 
+		//return "redirect:test-operations/all";  // redirect req to another class hander method
+	}//showReportForGet
 }//class
